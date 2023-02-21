@@ -9,11 +9,17 @@ public class Animal {
   this.numberOfPaws=numberOfPaws;
   this.hasFur=hasFur;} 
  public String getDescription(){
-  String description;
-  if(hasFur==true){
-   description="This animal is mostly "+color+". It has "+numberOfPaws+" paws and a fur.";
+  String x;
+  String y;
+  if(numberOfPaws==1){
+   x="paw";
   }else{
-   description="This animal is mostly "+color+". It has "+numberOfPaws+" paws and no fur.";} 
+   x="paws";} 
+  if(hasFur==true){
+   y="a";
+  }else{
+   y="no";} 
+  String description="This animal is mostly "+color+". It has "+numberOfPaws+" "+x+" and "+y+" fur."; 
   return description;
  } 
 }
