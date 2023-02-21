@@ -18,4 +18,8 @@ public class Bird extends Animal{
   String description="This animal is mostly "+color+". It has "+numberOfPaws+" "+x+" and "+y+" fur. Moreover, it has 2 wings and can fly."; 
   return description;
  } 
+ public static void main(String[] args){
+  Bird bird=new Bird();
+  System.out.println(bird.getDescription());
+ }
 }
