@@ -1,8 +1,14 @@
 package com.epam.mjc.stage0;
 
 public class Bird extends Animal{
+ private String color;
+ private int numberOfPaws;
+ private boolean hasFur;
  public Bird(){
-  super("blue",2,false);
+  super("",0,false);
+  color="blue";
+  numberOfPaws=2;
+  hasFur=false;
  }
  public String getDescription(){
   String x;
@@ -22,4 +28,4 @@ public class Bird extends Animal{
   Bird bird=new Bird();
   System.out.println(bird.getDescription());
  }
-}
+} 
